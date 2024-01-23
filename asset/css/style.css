@@ -1,6 +1,9 @@
+.body{
+    margin: 0;
+}
 .container{
     background-color: black;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -14,7 +17,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 20vh;
 }
 .fa{
     color: white;
