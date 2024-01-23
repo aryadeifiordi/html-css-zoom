@@ -4,6 +4,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 .contained{
     
@@ -22,4 +23,13 @@ footer{
     background-color: darkgrey;
     color: red;
 
+}
+header{
+    background-color: grey;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+speaker{
+    margin-right: 2px;
 }
