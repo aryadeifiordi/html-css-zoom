@@ -1,38 +1,134 @@
-.body{
+
+* {
+    padding: 0;
     margin: 0;
-}
-.container{
-    background-color: black;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    overflow: hidden;
-}
-.contained{
+    box-sizing: border-box;
     
 }
-footer{
-    background-color: grey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 20vh;
+
+
+
+body {
+    font-family: sans-serif;
 }
-.fa{
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+main {
+    background-color: black;
+}
+
+section {
+    margin: 0px 100px;
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+   
+}
+
+.container > .contained {
+    width: calc(100% / 7 - 4px );
+    position: relative;
+    margin: 4px 2px;
+     
+}
+
+
+.img {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.contained > p {
+    background-color: rgba(106, 117, 126, 0.3);
+    position: absolute;
+    bottom: 20px;
+    font-size: 13px;
+    color: white;
+    padding: 2px;
+}
+
+
+.container-foot {
+    width: 100%;
+    height: 10vh;
+    background-color: #222222;
+    justify-content: space-between;
+    
+}
+
+button {
+    background-color: grey;
+    padding: 5px;
+    margin: 4px;
+    border-radius: 10px;
     color: white;
 }
-.end-meeting{
-    background-color: darkgrey;
-    color: red;
+
+
+.column > * {
+    color: white;
+    align-items: center;
+}
+
+
+.center > .fa-solid {
+    font-size: 25px;
 
 }
-header{
-    background-color: grey;
-    height: 40px;
-    display: flex;
-    flex-direction: row-reverse;
+
+.text-foot {
+    font-size: 10px;
+    padding: 5px ;
 }
-speaker{
-    margin-right: 2px;
+
+.symbol {
+    color: white;
+    padding: 30px 5px;
+}
+
+.center {
+   justify-content: center; 
+   align-items: center;
+   padding: 5px;
+   
+}
+
+.green {
+    color: green;
+}
+
+.red-foot {
+    color: red;
+    background-color: #4a4a4a;
+    padding: 27px;
+}
+
+.fa-user-plus {
+    padding-left: 10px;
 }
